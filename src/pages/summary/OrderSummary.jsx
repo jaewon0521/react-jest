@@ -1,14 +1,15 @@
 import React from "react";
+import SummaryForm from "./SummaryForm";
 
 const OrderSummary = () => {
   return (
     <div>
-      <h3>Order Summary</h3>
+      <h1>Order Summary</h1>
       <section>
         <h2>Scope:$6.00</h2>
-        <ol>
+        <ul>
           <li>3 Vanilla</li>
-        </ol>
+        </ul>
       </section>
       <section>
         <h2>Toppings: $4.50</h2>
@@ -21,6 +22,7 @@ const OrderSummary = () => {
       <section>
         <h2>Total $10.50</h2>
       </section>
+      <SummaryForm />
     </div>
   );
 };
